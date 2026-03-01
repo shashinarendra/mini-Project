@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:#6caef06f;;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #003366);
+    color: white;
+    height: 45px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: #eaf4ff;
+}
+
+.hero h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Form Section */
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.form-container {
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.2);
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #003366;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,102,204,0.4);
+}
+
+/* Button */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #003366, #3399ff);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,102,204,0.4);
+}
+
+/* Message */
+#loginMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #003366;
+    color: white;
+}
+
+/* Fade Animation */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
