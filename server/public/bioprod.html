@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mico Biotech | Production</title>
+
+    <link rel="stylesheet" href="bioprod.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <h2 class="heading">Mico Biotech</h2>
+
+        <ul class="nav-links heading">
+            <li><a href="biotech.html">Home</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- CALENDAR -->
+
+    <div class="calendar-box">
+
+        <h2>Select Production Date</h2>
+
+        <div class="calendar-header">
+
+            <button onclick="prevMonth()">◀</button>
+
+            <h3 id="monthYear"></h3>
+
+            <button onclick="nextMonth()">▶</button>
+
+        </div>
+
+        <div id="calendar"></div>
+
+    </div>
+
+
+
+    <!-- MANUAL PRODUCTION ENTRY -->
+
+    <div class="manual-production">
+
+        <h3>Add / Edit Vaccine Production</h3>
+        <select id="medicine">
+
+            <option value="COVAXIN">COVAXIN</option>
+            <option value="iNCOVACC">iNCOVACC</option>
+            <option value="Typbar TCV">Typbar TCV</option>
+            <option value="ROTAVAC">ROTAVAC</option>
+            <option value="JENVAC">JENVAC</option>
+            <option value="Chirorab">Chirorab</option>
+            <option value="Hillchol">Hillchol</option>
+            <option value="Biopolio">Biopolio</option>
+            <option value="Revac-B+">Revac-B+</option>
+            <option value="Comvac">Comvac</option>
+            <option value="HNVAC">HNVAC</option>
+            <option value="Malcovax">Malcovax</option>
+
+        </select>
+
+        <input type="number" id="productionQty" placeholder="Enter production quantity">
+
+        <button onclick="addProduction()">Add Production</button>
+
+    </div>
+
+
+
+    <!-- TITLE -->
+
+    <div class="production-title">
+
+        <h2>Biotech Production Details</h2>
+
+        <p>Click a date to view daily production</p>
+
+    </div>
+    <!-- PIE CHART FLEXBOXES -->
+
+    <div id="productionSection" class="production-area">
+
+        <div class="prod-box">
+            <h3 id="med1">Vaccine</h3>
+            <canvas id="chart1"></canvas>
+        </div>
+
+        <div class="prod-box">
+            <h3 id="med2">Vaccine</h3>
+            <canvas id="chart2"></canvas>
+        </div>
+
+        <div class="prod-box">
+            <h3 id="med3">Vaccine</h3>
+            <canvas id="chart3"></canvas>
+        </div>
+
+        <div class="prod-box">
+            <h3 id="med4">Vaccine</h3>
+            <canvas id="chart4"></canvas>
+        </div>
+
+    </div>
+
+    <script src="bioprod.js"></script>
+
+</body>
+
+</html>

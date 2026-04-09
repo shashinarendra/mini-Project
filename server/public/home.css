@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    background: #BFD8FF;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #003366;
+    color: white;
+    height: 10vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+/* FLEXBOX */
+.flexbox {
+    width: 49%;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.2);
+}
+
+/* CAROUSEL BOX */
+.carousel-box {
+    height: 380px;
+}
+
+/* SPLIT SLIDE */
+.split-slide {
+    display: flex;
+    height: 320px;
+}
+
+.left-side {
+    flex: 1;
+}
+
+.left-side img {
+    height: 48vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.right-side {
+    flex: 1;
+    background-color: #003366;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ABOUT */
+.about-slide {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-slide h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+/* MAP */
+.map-slide img {
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* SMALL BOXES */
+.small-box {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #003366;
+    transition: 0.3s;
+}
+
+.small-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #003366;
+    color: white;
+}
+
+.imgs {
+    height: 35vh;
+    width: 45vh;
+    padding: 6px;
+    margin: 6px;
+}
+.img1
+{
+    height: 80vh;
+}

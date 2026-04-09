@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color:#BFD8FF;
+    color: hsl(210, 100%, 20%);
+}
+
+.navbar {
+    background-color: #003366;
+    color: white;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    height: 10vh;
+    font-size: 12px;
+}
+
+.navbar h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bfff;
+}
+
+.hero {
+    background: #e6f2ff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.registration-section {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 480px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,51,102,0.15);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #003366;
+    box-shadow: 0 0 6px rgba(0,51,102,0.3);
+    outline: none;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #00509e;
+    transform: scale(1.02);
+}
+
+#messageBox {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+.heading
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}

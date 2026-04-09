@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mico Biotech | Complaints</title>
+    <link rel="stylesheet" href="biocomplaints.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="heading">Mico Biotech</h2>
+
+        <ul class="nav-links heading">
+            <li><a href="biotech.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="month-box">
+        <h2>Select Month</h2>
+
+        <div class="month-nav">
+            <button onclick="prevMonth()">◀</button>
+            <span id="monthYear"></span>
+            <button onclick="nextMonth()">▶</button>
+        </div>
+    </div>
+
+    <div class="add-complaint">
+        <h3>Add Complaint</h3>
+
+        <select id="product">
+            <option value="">Select Complaint Type</option>
+            <option>Vaccine Delay</option>
+            <option>Cold Storage Issue</option>
+            <option>Packaging Damage</option>
+            <option>Wrong Batch Supplied</option>
+            <option>Transport Issue</option>
+            <option>Regulatory Issue</option>
+            <option>Workers issue</option>
+            <option>Electricity issue</option>
+        </select>
+
+        <input type="text" id="complaintText" placeholder="Complaint description">
+
+        <button onclick="addComplaint()">Submit Complaint</button>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Complaints</th>
+                    <th>Status</th>
+                    <th>Solution</th>
+                </tr>
+            </thead>
+            <tbody id="complaintTable"></tbody>
+        </table>
+    </div>
+
+    <script src="biocomplaints.js"></script>
+
+</body>
+</html>

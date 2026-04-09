@@ -1,0 +1,76 @@
+body {
+    font-family: Arial;
+    background: #BFD8FF;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #003366;
+    color: white;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.month-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.month-nav button {
+    padding: 8px 15px;
+    background: #003366;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.add-complaint {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.add-complaint input,
+.add-complaint select {
+    padding: 8px;
+}
+
+.table-container {
+    width: 80%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #003366;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.status-closed {
+    background: #BFD8FF;
+}

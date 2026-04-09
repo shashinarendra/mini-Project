@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mico Industries | Complaints</title>
+
+    <link rel="stylesheet" href="complaints.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h2 class="heading">Mico Pharmaceuticals</h2>
+
+        <ul class="nav-links heading">
+            <li><a href="pharma.html">Home</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="month-box">
+
+        <h2>Select Month</h2>
+
+        <div class="month-nav">
+            <button onclick="prevMonth()">◀</button>
+            <span id="monthYear"></span>
+            <button onclick="nextMonth()">▶</button>
+        </div>
+
+    </div>
+
+
+    <div class="add-complaint">
+
+        <h3>Add Complaint</h3>
+
+        <select id="product">
+
+            <option value="">Select Complaint Type</option>
+
+            <option value="General - Late Delivery">General - Late Delivery</option>
+            <option value="General - Packaging Damage">General - Packaging Damage</option>
+            <option value="General - Wrong Batch Supplied">General - Wrong Batch Supplied</option>
+            <option value="General - Distributor Issue">General - Distributor Issue</option>
+            <option value="General-issues">General Issues</option>
+            <option value="Worker-issues">Worker Issues</option>
+            
+
+        </select>
+        <input type="text" id="complaintText" placeholder="Complaint description">
+
+        <button onclick="addComplaint()">Submit Complaint</button>
+
+    </div>
+
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Complaints</th>
+                    <th>Status</th>
+                    <th>Solution</th>
+                </tr>
+            </thead>
+
+            <tbody id="complaintTable"></tbody>
+
+        </table>
+
+    </div>
+
+    <script src="complaints.js"></script>
+
+</body>
+
+</html>

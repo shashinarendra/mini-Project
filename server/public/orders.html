@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mico Industries | Agency Orders</title>
+
+    <link rel="stylesheet" href="orders.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR (same as pharma page) -->
+    <nav class="navbar">
+
+        <h2 class="heading">Mico Pharmaceuticals</h2>
+
+        <ul class="nav-links heading">
+            <li><a href="pharma.html">Home</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- WEEK SELECTOR -->
+
+    <div class="week-container">
+
+        <h2>Select Week</h2>
+
+        <div class="month-nav">
+
+            <button onclick="prevMonth()">◀</button>
+
+            <span id="monthYear"></span>
+
+            <button onclick="nextMonth()">▶</button>
+
+        </div>
+
+        <div class="weeks" id="weeks"></div>
+
+    </div>
+    <div class="manual-order">
+
+        <h3>Add Order (Future Weeks)</h3>
+
+        <select id="agency">
+            <option value="">Select Agency</option>
+            <option>Apollo Pharmacy Distribution Network</option>
+            <option>Keimed Private Limited</option>
+            <option>Vardhman Health Specialities</option>
+            <option>Lakshmi Pharma Distributors</option>
+            <option>Taj Pharma Distributors</option>
+            <option>Sri Venkateswara Medical Agencies</option>
+            <option>Medihauxe Pharma Solutions</option>
+            <option>Sain Medicaments Private Limited</option>
+            <option>Ganga Pharma Distributors</option>
+            <option>Gupta Pharma Distributors</option>
+            <option>Vishu Medical Agency</option>
+            <option>Yash Agencies</option>
+            <option>New Dowlat Agencies</option>
+            <option>Sandor Medical Pvt Ltd</option>
+            <option>Jyothi agencies</option>
+            <option>Om shree medisurge Inc</option>
+        </select>
+
+
+        <select id="product"></select>
+
+        <input type="number" id="quantity" placeholder="Quantity">
+
+        <button onclick="addManualOrder()">Add Order</button>
+
+    </div>
+
+    <!-- ORDERS TABLE -->
+
+    <div class="table-container">
+
+        <table id="ordersTable">
+
+            <thead>
+
+                <tr>
+                    <th>Agencies</th>
+                    <th>Orders</th>
+                    <th>Total Bill</th>
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <script src="orders.js"></script>
+
+</body>
+
+</html>

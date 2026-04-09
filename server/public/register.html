@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mico Industries | Employee Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="heading">Mico Industries</h1>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Smart Industrial Zone Management</h2>
+            <p>Secure Employee Authentication Portal</p>
+        </div>
+    </section>
+
+    <section class="registration-section">
+        <div class="form-container fade-in">
+
+            <h2>Employee Registration</h2>
+
+            <form id="registrationForm" novalidate autocomplete="off">
+
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" id="firstName" placeholder="Enter First Name" required  autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" id="lastName" placeholder="Enter Last Name" required  autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date" id="dob" required  required autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Branch Code</label>
+                    <select id="branchCode" required autocomplete="off">
+
+                        <option value="">Select Branch Code</option>
+                        <option value="MS101">MS101</option>
+                        <option value="MS102">MS102</option>
+                        <option value="MS200">MS200</option>
+                        <option value="MS201">MS201</option>
+                        <option value="MS103">MS103</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Branch Address</label>
+
+                    <select id="branchAddress" required>
+
+                        <option value="">Select Branch Address</option>
+                        <option value="UPPAL-IDA">UPPAL-IDA</option>
+                        <option value="MEDCHAL-IDA">MEDCHAL-IDA</option>
+                        <option value="BOLLARUM-IDA">BOLLARUM-IDA</option>
+                        <option value="ADIBATLA">ADIBATLA</option>
+                        <option value="TURKAPALLY">TURKAPALLY</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter Official Email" required autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label>Re-enter Password</label>
+                    <input type="password" id="rePassword" placeholder="Re-enter Password" required autocomplete="off">
+                </div>
+
+                <button type="submit" class="btn-primary">Register Now</button>
+
+            </form>
+
+            <div id="messageBox"></div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Mico Industries | Smart Industrial Zone System</p>
+    </footer>
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>

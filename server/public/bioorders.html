@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mico Industries | Biotech Orders</title>
+    <link rel="stylesheet" href="bioorders.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <h2 class="heading">Mico Biotech</h2>
+
+        <ul class="nav-links heading">
+            <li><a href="biotech.html">Home</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- WEEK SELECTOR -->
+
+    <div class="week-container">
+
+        <h2>Select Week</h2>
+
+        <div class="month-nav">
+
+            <button onclick="prevMonth()">◀</button>
+
+            <span id="monthYear"></span>
+
+            <button onclick="nextMonth()">▶</button>
+
+        </div>
+
+        <div class="weeks" id="weeks"></div>
+
+    </div>
+
+    <!-- ADD ORDER -->
+
+    <div class="manual-order">
+
+        <h3>Add Order (Future Weeks)</h3>
+
+        <select id="agency">
+            <option value="">Select Agency</option>
+            <option>BioGenex</option>
+            <option>Lupin Diagnostics</option>
+            <option>Novozymes South Asia</option>
+            <option>MedGenome Labs Pvt. Ltd.</option>
+            <option>PathCare Labs</option>
+            <option>Sathya Diagnostic Center</option>
+            <option>Sprint Diagnostics</option>
+            <option>Thyrocare Diagnostic Centre</option>
+            <option>Agilus Diagnostics </option>
+            <option>Eurofins Advinus</option>
+            <option>Sai Life Sciences</option>
+            <option>Redcliffe Labs</option>
+        </select>
+
+        <select id="product"></select>
+
+        <input type="number" id="quantity" placeholder="Quantity">
+
+        <button onclick="addManualOrder()">Add Order</button>
+
+    </div>
+
+    <!-- TABLE -->
+
+    <div class="table-container">
+
+        <table id="ordersTable">
+
+            <thead>
+                <tr>
+                    <th>Agencies</th>
+                    <th>Orders</th>
+                    <th>Total Bill</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableBody"></tbody>
+
+        </table>
+
+    </div>
+
+    <script src="bioorders.js"></script>
+
+</body>
+
+</html>

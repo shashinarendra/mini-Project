@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mico Industries | Production</title>
+
+    <link rel="stylesheet" href="production.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <h2 class="heading">Mico Pharmaceuticals</h2>
+
+        <ul class="nav-links heading">
+            <li><a href="pharma.html">Home</a></li>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- CALENDAR -->
+
+    <div class="calendar-box">
+
+        <h2>Select Production Date</h2>
+
+        <div class="calendar-header">
+
+            <button onclick="prevMonth()">◀</button>
+
+            <h3 id="monthYear"></h3>
+
+            <button onclick="nextMonth()">▶</button>
+
+        </div>
+
+        <div id="calendar"></div>
+
+    </div>
+
+
+
+    <!-- NEW: MANUAL PRODUCTION ENTRY -->
+
+    <div class="manual-production">
+
+        <h3>Add Production (Future Dates Only)</h3>
+
+        <select id="medicine">
+
+            <option value="Dolo-650">Dolo-650</option>
+            <option value="Paracetamol">Paracetamol</option>
+            <option value="Azithromycin">Azithromycin</option>
+            <option value="Netcold">Netcold</option>
+            <option value="Multivitamin"> Multivitamin</option>
+            <option value="Sucralsain">Sucralsain </option>
+            <option value="Becovit-z syrup">Becovit-z syrup</option>
+            <option value="Metformin">Metformin</option>
+            <option value="Cetirizine">Cetirizine</option>
+            <option value="Ciprofloxacin">Ciprofloxacin</option>
+            <option value="Aspirin">Aspirin</option>
+            <option value="Pantoprazole">Pantoprazole</option>
+            <option value="Mephtol">Mephtol</option>
+            <option value="Swich 100"> Swich 100</option>
+            <option value="Levocetirizine 5mg"> Levocetirizine 5mg</option>
+
+        </select>
+
+        <input type="number" id="productionQty" placeholder="Enter production quantity">
+
+        <button onclick="addProduction()">Add Production</button>
+
+    </div>
+
+
+
+    <!-- TITLE -->
+
+    <div class="production-title">
+
+        <h2 class="production-title h2">Production Details</h2>
+
+        <p class="production-title p">Click a date to view daily production</p>
+
+    </div>
+
+
+
+    <!-- PIE CHART FLEXBOXES -->
+
+    <div id="productionSection" class="production-area">
+
+        <div class="prod-box">
+
+            <h3 id="med1">Medicine</h3>
+
+            <canvas id="chart1"></canvas>
+
+        </div>
+
+
+        <div class="prod-box">
+
+            <h3 id="med2">Medicine</h3>
+
+            <canvas id="chart2"></canvas>
+
+        </div>
+
+
+        <div class="prod-box">
+
+            <h3 id="med3">Medicine</h3>
+
+            <canvas id="chart3"></canvas>
+
+        </div>
+
+
+        <div class="prod-box">
+
+            <h3 id="med4">Medicine</h3>
+
+            <canvas id="chart4"></canvas>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="production.js"></script>
+
+</body>
+
+</html>

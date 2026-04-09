@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Biotech Access</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #BFD8FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 220px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #003366;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0055aa;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h2>Biotech Branch Authentication</h2>
+
+        <input type="password" id="code" placeholder="Enter Branch Code">
+
+        <input type="password" id="address" placeholder="Enter Branch Address">
+
+        <button onclick="checkAccess()">Enter Biotech</button>
+
+    </div>
+
+    <script>
+
+        function checkAccess() {
+
+            // Get values and convert to uppercase
+            let code = document.getElementById("code").value.toUpperCase();
+            let address = document.getElementById("address").value.toUpperCase();
+
+            // All valid branches
+            const validBranches = {
+                "MS200": "BOLLARUM-IDA",
+                "MS201": "ADIBATLA4"
+            };
+
+            // Check authentication
+            if (validBranches[code] && validBranches[code] === address) {
+
+                alert("Access Granted ✅");
+                window.location.href = "biotech.html";
+
+            } else {
+
+                alert("Access Denied ❌ Invalid Branch Code or Address");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

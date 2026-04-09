@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mico Pharmaceuticals</title>
+  <link rel="stylesheet" href="pharma.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h1>Mico Pharmaceuticals</h1>
+    <a href="/home.html">Home</a>
+  </nav>
+  <div class="container">
+
+    <div class="flexbox" onclick="toggleProducts()">
+      <h2 class="head1">Our Products</h2>
+      <p class="para1">Click to view products & bestsellers</p>
+    </div>
+
+    <div class="flexbox" onclick="openProductionPage()">
+      <h2 class="head1">Production details</h2>
+      <p class="para1">Click to view production dashboard</p>
+    </div>
+
+    <div class="flexbox" onclick="window.location.href='orders.html'">
+      <h2 class="head1">My Orders </h2>
+      <p class="para1">Click To view Orders</p>
+    </div>
+
+    <div class="flexbox" onclick="window.location.href='complaints.html'">
+      <h2 class="head1">Complaints</h2>
+      <p class="para1">click to view the Complaints</p>
+    </div>
+
+    <!-- Tables will appear here -->
+    <div id="productContent"></div>
+
+  </div>
+  <script src="pharma.js"></script>
+</body>
+
+</html>

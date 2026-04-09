@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mico Biotech</title>
+  <link rel="stylesheet" href="pharma.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h1>Mico Biotech</h1>
+    <a href="/home.html">Home</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="flexbox" onclick="toggleProducts()">
+      <h2 class="head1">Our Products</h2>
+      <p class="para1">Click to view biotech products</p>
+    </div>
+
+    <div class="flexbox" onclick="window.location.href='bioprod.html'">
+      <h2 class="head1">Production Details</h2>
+      <p class="para1">Click to view biotech production</p>
+    </div>
+
+    <div class="flexbox" onclick="window.location.href='bioorders.html'">
+      <h2 class="head1">My Orders</h2>
+      <p class="para1">Click to view orders</p>
+    </div>
+
+    <div class="flexbox" onclick="window.location.href='biocomplaints.html'">
+      <h2 class="head1">Complaints</h2>
+      <p class="para1">Click to view complaints</p>
+    </div>
+
+    <div id="productContent"></div>
+
+  </div>
+
+  <script src="biotech.js"></script>
+
+</body>
+</html>
